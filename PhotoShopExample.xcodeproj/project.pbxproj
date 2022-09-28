@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21650353D237F78CB2949C2B /* Pods_PhotoShopExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42AA6D2EE79A43628954A170 /* Pods_PhotoShopExample.framework */; };
 		CA6E6F3228E1991600AB20AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6E6F3128E1991600AB20AB /* AppDelegate.swift */; };
 		CA6E6F3428E1991600AB20AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6E6F3328E1991600AB20AB /* SceneDelegate.swift */; };
 		CA6E6F3628E1991600AB20AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6E6F3528E1991600AB20AB /* ViewController.swift */; };
@@ -14,9 +15,14 @@
 		CA6E6F3C28E1991600AB20AB /* PhotoShopExample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CA6E6F3A28E1991600AB20AB /* PhotoShopExample.xcdatamodeld */; };
 		CA6E6F3E28E1991600AB20AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA6E6F3D28E1991600AB20AB /* Assets.xcassets */; };
 		CA6E6F4128E1991600AB20AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA6E6F3F28E1991600AB20AB /* LaunchScreen.storyboard */; };
+		CA6E6F5228E19A1200AB20AB /* PhotoShopModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6E6F5128E19A1200AB20AB /* PhotoShopModel.swift */; };
+		CA6E6F5428E19A2600AB20AB /* PhotoShopViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6E6F5328E19A2600AB20AB /* PhotoShopViewModel.swift */; };
+		CA6E6F5728E19AE900AB20AB /* PhotoShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6E6F5628E19AE900AB20AB /* PhotoShopViewController.swift */; };
+		CA6E6F5928E1BA4C00AB20AB /* PhotoShopService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6E6F5828E1BA4C00AB20AB /* PhotoShopService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		42AA6D2EE79A43628954A170 /* Pods_PhotoShopExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotoShopExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA6E6F2E28E1991600AB20AB /* PhotoShopExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoShopExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA6E6F3128E1991600AB20AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA6E6F3328E1991600AB20AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +32,12 @@
 		CA6E6F3D28E1991600AB20AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA6E6F4028E1991600AB20AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA6E6F4228E1991600AB20AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA6E6F5128E19A1200AB20AB /* PhotoShopModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoShopModel.swift; sourceTree = "<group>"; };
+		CA6E6F5328E19A2600AB20AB /* PhotoShopViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoShopViewModel.swift; sourceTree = "<group>"; };
+		CA6E6F5628E19AE900AB20AB /* PhotoShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoShopViewController.swift; sourceTree = "<group>"; };
+		CA6E6F5828E1BA4C00AB20AB /* PhotoShopService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoShopService.swift; sourceTree = "<group>"; };
+		FCE522A9570129F6799FD926 /* Pods-PhotoShopExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoShopExample.release.xcconfig"; path = "Target Support Files/Pods-PhotoShopExample/Pods-PhotoShopExample.release.xcconfig"; sourceTree = "<group>"; };
+		FD0419379F4025EE1ACF7E3C /* Pods-PhotoShopExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoShopExample.debug.xcconfig"; path = "Target Support Files/Pods-PhotoShopExample/Pods-PhotoShopExample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +45,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21650353D237F78CB2949C2B /* Pods_PhotoShopExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0AF19BC4B61AC064C299E29A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42AA6D2EE79A43628954A170 /* Pods_PhotoShopExample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B971F852293B48EA9277B6A8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FD0419379F4025EE1ACF7E3C /* Pods-PhotoShopExample.debug.xcconfig */,
+				FCE522A9570129F6799FD926 /* Pods-PhotoShopExample.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CA6E6F2528E1991600AB20AB = {
 			isa = PBXGroup;
 			children = (
 				CA6E6F3028E1991600AB20AB /* PhotoShopExample */,
 				CA6E6F2F28E1991600AB20AB /* Products */,
+				B971F852293B48EA9277B6A8 /* Pods */,
+				0AF19BC4B61AC064C299E29A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,16 +90,84 @@
 		CA6E6F3028E1991600AB20AB /* PhotoShopExample */ = {
 			isa = PBXGroup;
 			children = (
-				CA6E6F3128E1991600AB20AB /* AppDelegate.swift */,
-				CA6E6F3328E1991600AB20AB /* SceneDelegate.swift */,
-				CA6E6F3528E1991600AB20AB /* ViewController.swift */,
-				CA6E6F3728E1991600AB20AB /* Main.storyboard */,
-				CA6E6F3D28E1991600AB20AB /* Assets.xcassets */,
+				CA6E6F4828E1991C00AB20AB /* Features */,
+				CA6E6F4928E1992400AB20AB /* Core */,
 				CA6E6F3F28E1991600AB20AB /* LaunchScreen.storyboard */,
+				CA6E6F3D28E1991600AB20AB /* Assets.xcassets */,
 				CA6E6F4228E1991600AB20AB /* Info.plist */,
 				CA6E6F3A28E1991600AB20AB /* PhotoShopExample.xcdatamodeld */,
 			);
 			path = PhotoShopExample;
+			sourceTree = "<group>";
+		};
+		CA6E6F4828E1991C00AB20AB /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				CA6E6F4A28E1994F00AB20AB /* PhotoShop */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		CA6E6F4928E1992400AB20AB /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				CA6E6F3128E1991600AB20AB /* AppDelegate.swift */,
+				CA6E6F3328E1991600AB20AB /* SceneDelegate.swift */,
+				CA6E6F3528E1991600AB20AB /* ViewController.swift */,
+				CA6E6F3728E1991600AB20AB /* Main.storyboard */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		CA6E6F4A28E1994F00AB20AB /* PhotoShop */ = {
+			isa = PBXGroup;
+			children = (
+				CA6E6F4B28E1995D00AB20AB /* Service */,
+				CA6E6F4C28E1996700AB20AB /* Model */,
+				CA6E6F4D28E1996E00AB20AB /* ViewModel */,
+				CA6E6F4E28E1997600AB20AB /* View */,
+			);
+			path = PhotoShop;
+			sourceTree = "<group>";
+		};
+		CA6E6F4B28E1995D00AB20AB /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				CA6E6F5828E1BA4C00AB20AB /* PhotoShopService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		CA6E6F4C28E1996700AB20AB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CA6E6F5128E19A1200AB20AB /* PhotoShopModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CA6E6F4D28E1996E00AB20AB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CA6E6F5328E19A2600AB20AB /* PhotoShopViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CA6E6F4E28E1997600AB20AB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CA6E6F5528E19A3000AB20AB /* TableViewCell */,
+				CA6E6F5628E19AE900AB20AB /* PhotoShopViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CA6E6F5528E19A3000AB20AB /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +177,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CA6E6F4528E1991600AB20AB /* Build configuration list for PBXNativeTarget "PhotoShopExample" */;
 			buildPhases = (
+				A2FE7F41A8854E55BA5D6395 /* [CP] Check Pods Manifest.lock */,
 				CA6E6F2A28E1991600AB20AB /* Sources */,
 				CA6E6F2B28E1991600AB20AB /* Frameworks */,
 				CA6E6F2C28E1991600AB20AB /* Resources */,
+				4F66EFC0C334878184D1A77A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,6 +238,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4F66EFC0C334878184D1A77A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PhotoShopExample/Pods-PhotoShopExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PhotoShopExample/Pods-PhotoShopExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PhotoShopExample/Pods-PhotoShopExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2FE7F41A8854E55BA5D6395 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PhotoShopExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CA6E6F2A28E1991600AB20AB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -144,6 +288,10 @@
 				CA6E6F3628E1991600AB20AB /* ViewController.swift in Sources */,
 				CA6E6F3C28E1991600AB20AB /* PhotoShopExample.xcdatamodeld in Sources */,
 				CA6E6F3228E1991600AB20AB /* AppDelegate.swift in Sources */,
+				CA6E6F5728E19AE900AB20AB /* PhotoShopViewController.swift in Sources */,
+				CA6E6F5428E19A2600AB20AB /* PhotoShopViewModel.swift in Sources */,
+				CA6E6F5228E19A1200AB20AB /* PhotoShopModel.swift in Sources */,
+				CA6E6F5928E1BA4C00AB20AB /* PhotoShopService.swift in Sources */,
 				CA6E6F3428E1991600AB20AB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,6 +434,7 @@
 		};
 		CA6E6F4628E1991600AB20AB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD0419379F4025EE1ACF7E3C /* Pods-PhotoShopExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -307,12 +456,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		CA6E6F4728E1991600AB20AB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCE522A9570129F6799FD926 /* Pods-PhotoShopExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -334,7 +484,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
